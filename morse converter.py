@@ -1,14 +1,7 @@
-# -*- coding: utf-8 -*-
-"""
-Created on Mon Jun 20 17:34:13 2022
-
-@author: SergioOliveira
-"""
-
-import requests
-
 
 code = input("Write the message or character:")
+
+message = list()
 
 def convert_message(code):
         code = code.replace('A', '. _' )
@@ -17,20 +10,64 @@ def convert_message(code):
         code = code.replace('b', '_ . . .' )
         code = code.replace('C', '_ . _ .')
         code = code.replace('c', '_ . _ .')
-        ...
+        code = code.replace('D', '_ . .')
+        code = code.replace('d', '_ . .')
+        code = code.replace('E', '.')
+        code = code.replace('e', '.')
+        code = code.replace('F', '. . _ .')
+        code = code.replace('f', '. . _ .')
+        code = code.replace('G', '_ _ .')
+        code = code.replace('g', '_ _ .')
+        code = code.replace('H', '. . . .')
+        code = code.replace('I', '. .')
+        code = code.replace('i', '. .')
+        code = code.replace('J', '. _ _ _')
+        code = code.replace('j', '. _ _ _')
+        code = code.replace('K', '_ . _')
+        code = code.replace('k', '_ . _')
+        code = code.replace('K', '_ . _')
+        code = code.replace('k', '_ . _')
+        code = code.replace('L', '. _ . .')
+        code = code.replace('l', '. _ . .')
+        code = code.replace('M', '_ _')
+        code = code.replace('m', '_ _')
+        code = code.replace('N', '_ .')
+        code = code.replace('n', '_ .')
+        code = code.replace('O', '_ _ _')
+        code = code.replace('o', '_ _ _')
+        code = code.replace('P', '. _ _ .')
+        code = code.replace('p', '. _ _ .')
+        code = code.replace('Q', ' _ _ . _')
+        code = code.replace('q', ' _ _ . _')
+        code = code.replace('R', '. _ .')
+        code = code.replace('r', '. _ .')
+        code = code.replace('S', '. . .')
+        code = code.replace('s', '. . .')
+        code = code.replace('T', '_')
+        code = code.replace('t', '_')
+        code = code.replace('U', '. . _')
+        code = code.replace('u', '. . _')       
+        code = code.replace('V', '. . . _')
+        code = code.replace('v', '. . . _') 
+        code = code.replace('W', '. _ _')
+        code = code.replace('w', '. _ _') 
+        code = code.replace('X', '_ . . _')
+        code = code.replace('x', '_ . . _') 
+        code = code.replace('Y', '_ . _ _')
+        code = code.replace('y', '_ . _ _')
+        code = code.replace('Z', '_ _ . .')
+        code = code.replace('z', '_ _ . .')
+        message.append(code)
         return code
 
 
 if len(code) > 0:
     convert_message(code)
+    lock_code = code
+    print(f"Your message was: {lock_code}")
+
+    print(f'your morse code is: {message}')
 else:
     print('Error insert valid message')
- 
 
-       
-lock_code = code
-print(f"Your message was: {lock_code}")
-
-morse = convert_message(code)
-print(f'your morse code is: {morse}')
 
