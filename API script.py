@@ -43,6 +43,8 @@ session.headers.update(headers)
 
 #STEP 4 - Getting the data
 # in this case We are TRY to get the info and store it data by loading the json file.
+# we are also looking at if we fail to get the data we will handle and understand the error we are getting.
+
 try:
   response = session.get(url, params=parameters)
   data = json.loads(response.text)
